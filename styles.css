@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background: white;
+}
+
+.text {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 1.5rem;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.text>div {
+    animation: bounce 0.5s ease-in-out alternate infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(3rem);
+    }
+}
